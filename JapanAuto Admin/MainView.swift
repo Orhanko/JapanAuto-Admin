@@ -25,7 +25,7 @@ struct MainView: View {
                     Label("Users", systemImage: "person")
                 }
         }
-        .accentColor(Color(#colorLiteral(red: 0.929, green: 0.109, blue: 0.141, alpha: 1)))
+        .accentColor(.japanAutoRed)
         .onAppear{
             let appearance = UITabBarAppearance()
             appearance.configureWithDefaultBackground()  // Opaque pozadina

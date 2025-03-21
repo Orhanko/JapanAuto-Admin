@@ -20,14 +20,14 @@ struct LoginView: View {
             Image("loginLogo")
                 .resizable()
                 .scaledToFit()
-                .frame(width: 300)
+                .frame(maxWidth: 300)
                 .frame(maxWidth: .infinity, alignment: .center)
                 
             Spacer()
             Text("Log In")
                 .font(.largeTitle)
                 .fontWeight(.semibold)
-                .foregroundStyle(Color(#colorLiteral(red: 0.929, green: 0.109, blue: 0.141, alpha: 1)))
+                .foregroundStyle(.japanAutoRed)
                 .padding(.horizontal)
             
             TextField("Enter email", text: $username)
@@ -66,7 +66,7 @@ struct LoginView: View {
                     .foregroundColor(.white)
                     .padding()
                     .frame(maxWidth: .infinity)
-                    .background(Color(#colorLiteral(red: 0.929, green: 0.109, blue: 0.141, alpha: 1)))
+                    .background(.japanAutoRed)
                     .cornerRadius(4)
             }
             .padding()
